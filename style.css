@@ -13,7 +13,7 @@ body { margin: 0; background: var(--bg); color: var(--text);
 a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 header, main, footer { max-width: 760px; margin: 0 auto; padding: 0 16px; }
-header { display: flex; align-items: center; gap: 12px; padding-top: 24px; padding-bottom: 8px; }
+header { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding-top: 24px; padding-bottom: 8px; }
 header img { width: 40px; height: 40px; }
 header .brand { font-weight: 700; font-size: 20px; color: var(--text); }
 header nav { margin-left: auto; display: flex; gap: 18px; font-size: 15px; }
@@ -29,4 +29,4 @@ ul { padding-left: 1.2em; }
 li { margin: 6px 0; }
 .muted { color: var(--muted); font-size: 15px; }
 footer { padding-top: 32px; padding-bottom: 48px; color: var(--muted); font-size: 14px; }
-@media (max-width: 520px) { header nav { gap: 12px; font-size: 14px; } }
+@media (max-width: 520px) { header nav { gap: 14px; font-size: 14px; margin-left: 0; width: 100%; } }
